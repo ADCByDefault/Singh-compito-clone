@@ -1,0 +1,22 @@
+    1  cd Desktop
+    2  git clone https://github.com/sena-meucci/niceTeam.git
+    3  clear
+    4  cd NiceTeam
+    5  cd niceTeam
+    6  clear
+    7  git branch
+    8  git log
+    9  git clone https://github.com/sena-meucci/progettoStampa.git
+   10  cd progettoStampa
+   11  git config user.name "ADCByDefault"
+   12  git config user.email "swaran9938@gmail.com"
+   13  git commit -a -m "aggiunto nome"
+   14  git branch bugfix
+   15  git checkout bugfix
+   16  git add .
+   17  git commit -m "errore risolto in stampa"
+   18  clear
+   19  git checkout master
+   20  git merge bugfix
+   21  git branch -d bugfix
+   22  history 30 > comandi.txt
